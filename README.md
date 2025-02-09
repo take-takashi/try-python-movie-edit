@@ -40,4 +40,21 @@ continue with installation? (y/N) N
 
 ```bash
 % poetry add -D ipykernel
+% poetry add opencv-python
+% poetry add numpy
+```
+
+## 高速化
+
+```bash
+% poetry add torch
+
+# numpyのバージョンを下げるため（ultralyticsの依存関係）
+% poetry remove numpy
+% poetry add numpy==2.1.1
+% poetry add ultralytics
+% poetry add omegaconf
+
+# 環境変数を読み込むため
+% poetry add python-dotenv
 ```

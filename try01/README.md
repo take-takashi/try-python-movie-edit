@@ -1,6 +1,6 @@
-# try-python-movie-edit
+# try01
 
-pythonでmp4動画編集をやってみる
+rootから移動させてきたので**動かない**
 
 ## 環境の確認
 

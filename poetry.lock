@@ -405,6 +405,23 @@ files = [
 ]
 
 [[package]]
+name = "deep-sort-realtime"
+version = "1.3.2"
+description = "A more realtime adaptation of Deep SORT"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "deep-sort-realtime-1.3.2.tar.gz", hash = "sha256:32bab92f981a274fce3ff121f35894e5adab7ca00314c113c348de7bcb82d73e"},
+    {file = "deep_sort_realtime-1.3.2-py3-none-any.whl", hash = "sha256:a6e144c888fdfb27245d2a060acbe0d2f3088448defbc419f7a26bce063bdd6c"},
+]
+
+[package.dependencies]
+numpy = "*"
+opencv-python = "*"
+scipy = "*"
+
+[[package]]
 name = "executing"
 version = "2.2.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -2373,4 +2390,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "1efc7a3ab9fc7ddc1cef6b8a1c09c5cf0436614117e00666230b11ca181c264c"
+content-hash = "81292938b541b6f0e760b06b505ccd3c0aaba90fc84b707e46b5f3aaa89c0665"

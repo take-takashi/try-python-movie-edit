@@ -57,4 +57,7 @@ continue with installation? (y/N) N
 
 # 環境変数を読み込むため
 % poetry add python-dotenv
+
+# トラッキング機能のため
+% poetry add deep-sort-realtime
 ```

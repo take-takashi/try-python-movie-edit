@@ -2,16 +2,14 @@
 
 方針
 
-- ✅顔検出ではなく、全身を検出する
-- モザイクはガウスを採用
-- モザイクは最大4,5フレーム保持したい
+- ✅顔検出
+- ✅モザイクはガウスを採用
+- ✅モザイクは最大4,5フレーム保持したい
 - 2フレームごとに検出
-- 2フレーム目は同じ箇所にモザイク
-- （範囲を少しだけ拡大？）
+- 2フレーム目は同じ箇所にモザイク（範囲を少しだけ拡大？）
 - マルチスレッドを完全にやめれていない？
-- もはや顔検出ではなく、人物全体にする
 - ✅python3.13ではどうだ？
-- yolov11s.ptではどうだ？
+- ✅yolov11s.ptではどうだ？ → 精度的にnを使いたい
 
 ## setup command
 
@@ -34,3 +32,10 @@ Poetry (version 2.0.1)
 % poetry add -D ipykernel
 % poetry add ultralytics opencv-python torch torchvision "numpy<=2.1.1"
 ```
+
+## memo
+
+- [ultralytics/ultralytics: Ultralytics YOLO11 🚀](https://github.com/ultralytics/ultralytics)  
+  YOLOのモデルDL
+- [akanametov/yolo-face: YOLO Face 🚀 in PyTorch](https://github.com/akanametov/yolo-face?tab=readme-ov-file)  
+  YOLOのモデルDL（顔検出）

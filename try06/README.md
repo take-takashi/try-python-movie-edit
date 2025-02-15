@@ -31,6 +31,14 @@ Poetry (version 2.0.1)
 ```bash
 % poetry add -D ipykernel
 % poetry add ultralytics opencv-python torch torchvision "numpy<=2.1.1"
+% poetry add opencv-contrib-python
+
+# opencv-contrib-pythonを使うため
+% poetry remove opencv-python
+% poetry remove opencv-contrib-python
+% poetry add opencv-contrib-python@latest
+% poetry lock
+% poetry install --no-root
 ```
 
 ## memo

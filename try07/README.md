@@ -1,4 +1,4 @@
-# try06
+# try07
 
 ## setup command
 
@@ -8,7 +8,7 @@ Poetry (version 2.0.1)
 % poetry init
 % pyenv local 3.13.1
 % poetry env use $(pyenv which python)
- % poetry env info | grep -A 5 "Virtualenv" | grep "Python:" | awk '{print $2}'
+% poetry env info | grep -A 5 "Virtualenv" | grep "Python:" | awk '{print $2}'
 3.13.1
 % poetry shell
 

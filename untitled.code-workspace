@@ -5,6 +5,9 @@
             "name": "root"
         },
         {
+            "path": "app"
+        },
+        {
             "path": "try05"
         },
         {

@@ -1,0 +1,30 @@
+[project]
+name = "try08"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "take-takashi",email = "take.t.public@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "ultralytics (>=8.3.75,<9.0.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)",
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)",
+    "ffmpeg-python (>=0.2.0,<0.3.0)",
+    "numpy (<=2.1.1)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.12.0"
+taskipy = "^1.14.1"
+
+[tool.taskipy.tasks]
+build = "pyinstaller --onefile --clean --add-data 'assets:assets' main.py"

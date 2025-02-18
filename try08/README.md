@@ -1,5 +1,7 @@
 # try08
 
+PyInstallerでapp化するのを試した。
+
 ## setup command
 
 ```bash

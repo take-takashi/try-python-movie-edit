@@ -1,3 +1,13 @@
+import os
+import sys
+from pathlib import Path
+import matplotlib
+
+# キャッシュフォルダの変更
+# （残念ながらultralyticsのimport前に実施する必要がある）
+os.environ["MPLCONFIGDIR"] = "./.mpl_cache"
+print(f"matplotlib: {matplotlib.get_cachedir()}")
+
 import cv2
 import torch
 import numpy as np
@@ -6,17 +16,7 @@ from ultralytics import YOLO
 from queue import Queue
 import threading
 import ffmpeg
-import sys
-from pathlib import Path
 from com_func import resource_path
-import os
-import matplotlib
-
-
-# 以下の設定でmatplotlibの初回フォントビルドをやめるため
-# (このアプリではフォント描画を行わないため)
-os.environ['MPLCONFIGDIR'] = '/tmp/'  # 一時ディレクトリに設定
-matplotlib.use('Agg')  # GUIバックエンドを無効化
 
 # -------------------------------------------------------------
 # 1) 設定: デバイス・モデル・stride32リサイズ関数

@@ -29,4 +29,4 @@ taskipy = "^1.14.1"
 
 
 [tool.taskipy.tasks]
-build = "pyinstaller --onefile --clean --add-data assets:assets main.py"
+build = "pyinstaller --onefile --clean --icon icon.icns --add-data assets:assets main.py"

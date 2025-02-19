@@ -71,6 +71,12 @@ build = "pyinstaller --onefile --clean --add-data 'assets:assets' main.py"
 ' >> pyproject.toml
 ```
 
+## run command
+
+```bash
+% poetry run python main.py input.mp4 output.mp4
+```
+
 ## build command
 
 ```bash

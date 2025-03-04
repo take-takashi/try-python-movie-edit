@@ -6,9 +6,9 @@
 ## setup command
 
 ```bash
-% poetry -V
+takashi@Mac try12 % poetry -V
 Poetry (version 2.0.1)
-% poetry init
+takashi@Mac try12 % poetry init
 takashi@Mac try12 % pyenv local 3.13.1
 takashi@Mac try12 % poetry env use $(pyenv which python)
 Creating virtualenv try12 in /Users/takashi/github/try-python-movie-edit/try12/.venv
@@ -19,4 +19,10 @@ takashi@Mac try12 % poetry shell
 Spawning shell within /Users/takashi/github/try-python-movie-edit/try12/.venv
 takashi@Mac try12 % emulate bash -c '. /Users/takashi/github/try-python-movie-edit/try12/.venv/bin/activate'
 (try12-py3.13) takashi@Mac try12 % deactivate
+```
+
+## poetry add
+
+```bash
+takashi@Mac try12 % poetry add ultralytics opencv-python torch torchvision "numpy<=2.1.1"
 ```

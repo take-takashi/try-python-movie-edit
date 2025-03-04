@@ -7,7 +7,7 @@ authors = [
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = "^3.11"
+requires-python = ">=3.13"
 dependencies = [
     "ultralytics (>=8.3.74,<9.0.0)",
     "opencv-python (>=4.11.0.86,<5.0.0.0)",
